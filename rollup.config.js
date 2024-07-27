@@ -7,7 +7,7 @@ const typescriptOptions = {
 };
 
 const inputList = glob.sync("src/**/index.ts");
-inputList.push("src/cli.ts", "src/utils.ts");
+inputList.push("src/cli.ts");
 
 const data = [
   {
@@ -19,7 +19,7 @@ const data = [
   {
     external: ["lorem-ipsum", "node:process"],
     input: inputList,
-    output: { dir: "dist/cjs/", format: "cjs" },
+    output: { dir: "dist/cjs/", format: "cjs",chunkFileNames:"[name]-[hash].cjs", entryFileNames:"[name].cjs" },
     plugins: [typescript({ ...typescriptOptions, outDir: "dist/cjs/" })],
   },
 ];
