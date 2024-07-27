@@ -1,0 +1,39 @@
+{
+  "name": "toy-a",
+  "version": "0.3.0",
+  "type": "module",
+  "description": "A toy project to experiment with npm packaging",
+  "main": "src/index.ts",
+  "scripts": {
+    "cli": "tsx src/cli.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/microu-mr-kit/toy-a.git"
+  },
+  "keywords": [
+    "npm",
+    "typescript",
+    "rollup"
+  ],
+  "author": "Microu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/microu-mr-kit/toy-a/issues"
+  },
+  "homepage": "https://github.com/microu-mr-kit/toy-a#readme",
+  "dependencies": {
+    "lorem-ipsum": "^2.0.8"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.14.12",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.19.1",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
+}
